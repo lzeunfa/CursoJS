@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body{display: flex;
+            font-size: 0.7em;
+            background-color: lightgray;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        var nome = window.prompt("Qual é o seu nome?:")
+        document.writeln(`<h1>Seu nome ${nome} tem ${nome.length} letras</h1>`)
+        document.writeln(`<h1>Seu nome em maiúsculas é ${nome.toUpperCase()}</h1>`)
+        document.writeln(`<h1>Seu nome em minúsculas é ${nome.toLowerCase()}</h1>`)
+    </script>
+</body>
+</html>
