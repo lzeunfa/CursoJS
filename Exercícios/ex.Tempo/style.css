@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: bisque;
+    text-align: center;
+}
+
+h1{
+    padding: 20px 0px 0px 0px;
+    color: white;
+}
+
+.conteiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.filho{
+    background-color: white;
+    width: 450px;
+    height: 350px;
+    border-radius: 20px;
+}
+
+.conteiner > .filho > .ft > img{
+    border-radius: 50%;
+
+}
