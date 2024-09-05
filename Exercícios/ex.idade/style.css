@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #3A2945;
+}
+
+header{
+    margin: 25px;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 70vh;
+}
+
+main > div#filho{
+    padding: 20px;
+    width: 450px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+main > div#filho > p{
+    padding: 10px;
+}
+
+main > div#filho > input#submit{
+    margin-left:10px ;
+    padding: 2px;
+}

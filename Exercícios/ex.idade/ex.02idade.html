@@ -4,8 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verificador de idade</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>Verificador de Idade</header>
+
+    <main>
+        <div id="filho">
+            <p>Ano de nascimento<input type="number" name="ano" id="txtano" placeholder="Ex: 2006"></p>
+
+            <!--Área dos inputs de selecionar-->
+            <p>Sexo: 
+            <input type="radio" name="sexo" id="txtmasculino" value="masculino" checked>
+            <label for="txtmasc">Masculino</label>
+
+            <input type="radio" name="sexo" id="txtfeminino" value="feminino">
+            <label for="txtfeminino">Feminino</label>
+            </p>
+            <!--Área dos inputs de selecionar-->
+
+            <input id="submit" type="submit" value="Verificar" onclick="verificar()">
+            <p id="txt">Preencha os dados acima para ver o resultado</p>
+        </div>
+    </main>
+
+    <script src="scriptidade.js"></script>
 </body>
 </html>
