@@ -1,12 +1,12 @@
 function carregar(){
-    var msg = window.document.querySelector(`div.msg`)
+    var msg = window.document.querySelector(`p#msg`)
 
     var img = window.document.getElementById(`img`)
 
     var data = new Date()
     var hora = data.getHours()
 
-    msg.innerHTML = `Agora são ${hora} horas!`
+    msg.innerHTML = `<p>Agora são ${hora} horas!<p>`
 
     if(hora >=0 && hora <12){
         //bom dia
