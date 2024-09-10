@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/*geral*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*fim geral*/
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightslategray;
+    height: 100vh;
+}
+
+main{
+    display: flex;
+    background-color: whitesmoke;
+    width: 500px;
+    height: 430px;
+    border-radius: 20px 20px 100px 20px;
+    overflow: hidden;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.377);
+}
+
+main > div#info{
+    background-color: bisque;
+    height: 25%;
+    display: flex;
+    flex: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main > div#info > div#ajuste >p{
+    color: gray;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+main > div#info > div#ajuste >input{
+    width: 100px;
+    height: 50px;
+    border-color: lightgray;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.8em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: gray;
+}
+
+main > div#info > img{
+    transition: .5s;
+}
+
+main > div#info > img:hover{
+    cursor: pointer;
+    transform: translateY(3px);
+    transition: 0.5s;
+}
+
