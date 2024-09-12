@@ -10,28 +10,36 @@
 <body>
     <main>
         <!--Parte para arrumar onde colocar os números-->
-        <div id="info">
-            <div id="ajuste">
-                <p>Dia</p>
-                <input type="text" name="dia" id="txtdia" maxlength="2" autocomplete="off"><!--txtdia-->
+        <header>
+            <div class="info">
+                <div class="ajuste">
+                    <p>Dia</p>
+                    <input type="text" name="dia" id="txtdia" maxlength="2" autocomplete="off"><!--txtdia -- para adicionar no js-->
+                </div>
             </div>
-        </div>
-        <div id="info">
-            <div id="ajuste">
-                <p>Mês</p>
-                <input type="text" name="dia" id="txtmes" maxlength="2" autocomplete="off"><!--txtmes-->
+            <div class="info">
+                <div class="ajuste">
+                    <p>Mês</p>
+                    <input type="text" name="dia" id="txtmes" maxlength="2" autocomplete="off"><!--txtmes -- para adicionar no js-->
+                </div>
             </div>
-        </div>
-        <div id="info">
-            <div id="ajuste">
-                <p>Ano</p>
-                <input type="text" name="dia" id="txtano" maxlength="4" autocomplete="off"><!--txtano-->
+            <div class="info">
+                <div class="ajuste">
+                    <p>Ano</p>
+                    <input type="text" name="dia" id="txtano" maxlength="4" autocomplete="off"><!--txtano -- para adicionar no js-->
+                </div>
             </div>
-        </div>
-        <div id="info">
-            <img src="img/setacor2.png" alt="seta" onclick="calcular()" width="40px"><!--Function onclick para calcular a idade completa em dias e meses-->
-        </div>
-        <!--Fim da parte para colocar os números-->
+            <div class="info">
+                <img src="img/setacor2rx.png" alt="seta" onclick="calcular()" width="40px"><!--Function onclick para calcular a idade completa em dias e meses-->
+            </div>
+            <!--Fim da parte para colocar os números-->
+        </header>
+
+        <h1><mark id="tmanos">X</mark> Anos</h1><!--tm= text marker/ para diferenciar do txt ano etc e colocar no JS para quando gerar resultado aparecer ali-->
+        <h1><mark id="tmmeses">X</mark> Meses</h1>
+        <h1><mark id="tmdias">X</mark> Dias</h1>
     </main>
+
+    <script src="idcompl.js"></script>
 </body>
 </html>
