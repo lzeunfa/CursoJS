@@ -1,4 +1,4 @@
-function calcular(){
+function clicar(){
     //abaixo a parte de anos
     var txtano = document.getElementById(`txtano`)//recebe a resposta do input ano
     var anon = Number(txtano.value) // transforma a resposta string em número
@@ -30,18 +30,30 @@ function calcular(){
     var dian = Number(txtdia.value)
 
     var dia = new Date()
-    var diat = dia.getDay()
+    var diat = dia.getDate()
 
     var idaded= 0
 
-    var respd = documnet.getElementById(`tmdias`)
+    var respd = document.getElementById(`tmdias`)
 
     //acima era a parte de dias
-    
 
+    if(anon>anoat){
+        window.alert(`[ERRO] insira seus dados novamente`)
+    }else{
+        idadea = anoat-anon
+        respa.innerHTML=`${idadea}`
 
-    if(anon>anoat){//ano de nascimento amior que o ano atual da erro
-        window.alert(`[ERRO] coloque novamente seus dados`)
+        if(mesat<mesn){
+            idadea -= 1
+            respa.innerHTML=`${idadea}`
+
+            idadem=(mesat+13)-mesn
+            respm.innerHTML=`${idadem}`
+        }else{
+            
+        }
     }
+
     
 }
