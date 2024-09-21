@@ -21,6 +21,8 @@ function clicar(){
 
     var idadem = 0 //para receber o valor dos meses de vida
 
+    var mesc = 0
+
     var respm = document.getElementById(`tmmeses`)//recebe o marker para colocar os meses de vida
     
     //acima era a parte de meses
@@ -40,19 +42,38 @@ function clicar(){
 
     if(anon>anoat){
         window.alert(`[ERRO] insira seus dados novamente`)
+    }else if(mesat<=mesn){
+        mesc = 1
     }else{
-        idadea = anoat-anon
-        respa.innerHTML=`${idadea}`
+        mesc = 2
+    }
 
-        if(mesat<mesn){
-            idadea -= 1
-            respa.innerHTML=`${idadea}`
+    switch (mesc){
+        case 1:
+            idadea = anoat - anon -1
+            idadem = (mesn-12)+mesat
 
-            idadem=(mesat+13)-mesn
+            if (idadem=12){
+                idadem=0
+                idadea++
+                
+                respm.innerHTML=`${idadem}`
+                respa.innerHTML=`${idadea}`
+            }else{
+                respa.innerHTML=`${idadea}`
+                respm.innerHTML=`${idadem}`
+            }
+        break
+
+        case 2:
+            idadea = anoat - anon
+            idadem = (mesat-mesn)
+
             respm.innerHTML=`${idadem}`
-        }else{
-            
-        }
+            respa.innerHTML=`${idadea}`
+        break
+
+        default: window.alert(`[ERRO]`)
     }
 
     
