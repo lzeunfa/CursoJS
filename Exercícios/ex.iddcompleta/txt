@@ -1,0 +1,52 @@
+switch (mesat){
+        case 1://janeiro
+            idaded = diat
+        break;
+
+        case 2://fevereiro
+            idaded = 31 + diat
+        break;
+
+        case 3://março
+            idaded = 59 + diat
+        break;
+
+        case 4://abril
+            idaded = 90 + diat
+        break;
+
+        case 5://maio
+            idaded = 120 + diat
+        break;
+
+        case 6://junho
+            idaded = 151+ diat
+        break;
+
+        case 7://julho
+            idaded = 181+ diat
+        break;
+
+        case 8://agosto
+        idaded = 212 + diat
+        break;
+
+        case 9://setembro
+            idaded = 243 + diat
+        break;
+
+        case 10://outubro
+            idaded = 273 + diat
+        break;
+
+        case 11://novembro
+            idaded = 304 + diat
+        break;
+
+        case 12://dezembro
+            idaded = 334 + diat
+        break;
+
+        default:
+            window.alert(`[ERRO]`)
+    }
