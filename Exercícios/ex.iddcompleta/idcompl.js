@@ -3,6 +3,8 @@ function clicar(){
     var txtano = document.getElementById(`txtano`)//recebe a resposta do input ano
     var anon = Number(txtano.value) // transforma a resposta string em número
 
+    var tmtxtanos = document.getElementById(`tmtxtanos`)
+
     var ano = new Date()
     var anoat = ano.getFullYear()//pega o ano atual
 
@@ -59,6 +61,11 @@ function clicar(){
             
             if(idadem==1){
                 tmtxtmeses.innerHTML=`Mês`
+                
+            }
+
+            if(idadea==1){
+                tmtxtanos.innerHTML=`Ano`
             }
             respm.innerHTML=`${idadem}`
             respa.innerHTML=`${idadea}`
@@ -77,6 +84,10 @@ function clicar(){
             }else{
                 respa.innerHTML=`${idadea}`
                 respm.innerHTML=`${idadem}`
+            }
+
+            if(idadea==1){
+                tmtxtanos.innerHTML=`Ano`
             }
 
             if(idadem==1){
