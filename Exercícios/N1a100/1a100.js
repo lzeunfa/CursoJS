@@ -12,6 +12,6 @@ function adicionar(){
         window.alert(`Este número já foi inserido!`)
     }else{
         nums.push(num)
-        resultado.innerHTML += `Número ${nums.join(`,`)} adicionado <br>`
+        resultado.innerHTML += `Número ${num} adicionado <br>`
     }
 }
