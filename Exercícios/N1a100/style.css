@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: lightskyblue;
+}
+
+div.filho{
+    background-color: white;
+    width: 500px;
+    border-radius: 20px;
+}
+
+p{
+    padding: 10px;
+    font-size: 1.3em;
+}
+
+div.filho > p > input{
+    padding: 1px 5px 1px 5px;
+    border-radius: 5px;
+}
+
+input#submit:hover{
+    cursor: pointer;
+}
