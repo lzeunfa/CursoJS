@@ -48,46 +48,7 @@ function clicar(){
 
     if(anon>anoat){
         window.alert(`[ERRO] insira seus dados novamente`)
-    }else if(mesat>=mesn){
-        idadea = anoat - anon
-            idadem = (mesat-mesn+1)
-            
-            if(idadem==1){
-                tmtxtmeses.innerHTML=`Mês`
-                
-            }else{
-                tmtxtmeses.innerHTML=`Meses`
-            }
-
-            if(idadea==1 && idadea!=0){
-                tmtxtanos.innerHTML=`Ano`
-            }
-            respm.innerHTML=`${idadem}`
-            respa.innerHTML=`${idadea}`
     }else{
-        idadea = anoat - anon -1
-            idadem = (13-mesn)+mesat
-
-            if (idadem==12){
-                idadem=0
-                idadea++
-                
-                respm.innerHTML=`${idadem}`
-                respa.innerHTML=`${idadea}`
-            }else{
-                respa.innerHTML=`${idadea}`
-                respm.innerHTML=`${idadem}`
-            }
-
-            if(idadea==1){
-                tmtxtanos.innerHTML=`Ano`
-            }
-
-            if(idadem==1){
-                tmtxtmeses.innerHTML=`Mês`
-            }else{
-                tmtxtmeses.innerHTML=`Meses`
-            }
     }
     
 }
