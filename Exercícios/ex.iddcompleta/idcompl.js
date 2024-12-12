@@ -54,7 +54,7 @@ function clicar(){
     }else{
         respa.innerText= anoat-anon
         respm.innerText= (anoat-anon)*12
-        respd.innerText= ((anoat-anon)*12)*30
+        respd.innerText= ((anoat-anon)*12)*365
     }
     
 }
