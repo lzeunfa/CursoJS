@@ -48,7 +48,13 @@ function clicar(){
 
     if(anon>anoat){
         window.alert(`[ERRO] insira seus dados novamente`)
+        txtano.value = '';
+        txtmes.value = '';
+        txtdia.value = ''; 
     }else{
+        respa.innerText= anoat-anon
+        respm.innerText= (anoat-anon)*12
+        respd.innerText= ((anoat-anon)*12)*30
     }
     
 }
