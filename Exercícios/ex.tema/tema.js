@@ -8,6 +8,7 @@ txt.style.color= `black`
 function clicar(){
     if (document.body.style.background=== `black`){
         document.body.style.background= `white`
+        document.body.style.transition=`1s`
         div.style.background= `black`
         txt.style.color= `white`
 
